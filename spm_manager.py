@@ -121,12 +121,12 @@ def main():
         conn = SPMConn()
         conn.setup()
 
-        print(reset_handler())
+        # print(reset_handler())
         # print(conn.heartbeat_timeout())
         # print(conn.sleep_interval())
         # print(conn.version())
         # print(conn.status())
-        # heartbeat_handler()
+        heartbeat_handler()
 
     except Exception:
         print("Failed to start SPM manager")
